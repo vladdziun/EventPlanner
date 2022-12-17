@@ -8,3 +8,15 @@
         <input asp-for="Password"><br>
 <button>LogIn</button>
 </form>
+<p><a asp-controller="Home" asp-action="LoginGoogle">Login with google</a></p>
+<ul>
+    @if( Context.User.Identity.IsAuthenticated)
+    {
+        <li>
+            <a>Hello @User.Identity.Name</a>
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="LogoutGoogle">Logout Google</a>
+        </li>
+    }
+</ul>

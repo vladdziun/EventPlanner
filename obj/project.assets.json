@@ -12805,11 +12805,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\student\\c#\\WeddingPlannerExample\\LoginReg.csproj",
+      "projectUniqueName": "F:\\student\\c#\\EventPlanner\\LoginReg.csproj",
       "projectName": "LoginReg",
-      "projectPath": "F:\\student\\c#\\WeddingPlannerExample\\LoginReg.csproj",
+      "projectPath": "F:\\student\\c#\\EventPlanner\\LoginReg.csproj",
       "packagesPath": "C:\\Users\\Vlad-PC\\.nuget\\packages\\",
-      "outputPath": "F:\\student\\c#\\WeddingPlannerExample\\obj\\",
+      "outputPath": "F:\\student\\c#\\EventPlanner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vlad-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

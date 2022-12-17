@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eep3Cup0oCFUyiQmwAquU3FYNw61KJNdL8BTrmczBoU9TnF4PzmrvsV3ZrHytbaQrWz9oqc1YzwqCAbDhyuIvw==",
+  "dgSpecHash": "IA3ofCMoKePk40VCZocBa3/VE/2qQ1YF2vVy54mR3BFBedCvA02f5lw4LqAZ5Zq9ySylpY6RXFNCrVGS5Nefww==",
   "success": true,
-  "projectFilePath": "F:\\student\\c#\\WeddingPlannerExample\\LoginReg.csproj",
+  "projectFilePath": "F:\\student\\c#\\EventPlanner\\LoginReg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vlad-PC\\.nuget\\packages\\dapper\\1.60.9\\dapper.1.60.9.nupkg.sha512",
     "C:\\Users\\Vlad-PC\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
