@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using LoginReg.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.Google;
 
 namespace LoginReg
@@ -30,11 +32,7 @@ namespace LoginReg
             services.AddScoped<PasswordHasher<IUser>>();
             services.AddSession();            
             services.AddMvc();
-            //services.AddAuthentication().AddGoogle(googleOptions =>
-            //{
-            //    googleOptions.ClientId = Configuration["Authentication:Google:ClientId"];
-            //    googleOptions.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
-            //});
+
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -48,29 +46,36 @@ namespace LoginReg
 
             });
 
+            // needed to make a reques to google api
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+            app.UseRouting();
+            app.UseSession();
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles();
-            app.UseSession();  
-            app.UseMvc();
+            app.UseCors();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
             app.UseAuthentication();
+
         }
     }
 }

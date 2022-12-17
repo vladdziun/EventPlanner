@@ -1,0 +1,6 @@
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.csproj.AssemblyReference.cache
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.GeneratedMSBuildEditorConfig.editorconfig
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.AssemblyInfoInputs.cache
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.AssemblyInfo.cs
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.csproj.CoreCompileInputs.cache
+F:\student\c#\EventPlanner\obj\Debug\netcoreapp3.0\LoginReg.MvcApplicationPartsAssemblyInfo.cache
